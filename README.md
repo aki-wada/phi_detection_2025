@@ -10,7 +10,7 @@ Code data for 'LLM-based de-identification framework for medical imaging reports
 All code and data will be made publicly available under MIT License upon formal publication. 
 
 🔒 **Currently**:  
-- Code and synthetic dataset are available from the corresponding author ([a-wada@juntendo.ac.jp](mailto:a-wada@ujuntendo.ac.jp)) upon reasonable request
+- Code and synthetic dataset are available from the corresponding author　Akihiko Wada MD. PhD. ([a-wada@juntendo.ac.jp](mailto:a-wada@ujuntendo.ac.jp)) upon reasonable request
 - Reviewer access can be arranged through the editorial office
 
 ## Repository Structure (Planned)
