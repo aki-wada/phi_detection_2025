@@ -1,47 +1,48 @@
 # Synthetic Radiology Reports Dataset for PHI Detection
 
 ## Overview
-This directory contains a synthetic radiology report dataset created for developing and evaluating PHI (Protected Health Information) detection systems. All data is artificially generated and contains no real patient information.
+Synthetic Japanese radiology reports for PHI detection model development. Contains no real patient information.
 
-## Dataset Composition
-- **Total Reports**: 160
+## Dataset
+- **Total Reports**: 160 (100 training + 60 test)
 - **Total PHI Instances**: 874
-- **Report Types**: Radiology examination reports (MRI, CT, X-ray, etc.)
-- **Language**: Japanese medical reports
+- **Language**: Japanese
 
-## File Descriptions
+## Files
+- `Synthetic_reports_dataset_100.csv`: Training set (100 reports)
+- `Synthetic_reports_dataset_60.csv`: Test set (60 reports)
 
-### 📄 Synthetic_reports_dataset_100.csv
-- **Number of Reports**: 100
-- **Purpose**: Training/Development dataset
-- **Schema**:
-  - `report_text`: Full radiology report text (Japanese)
-  - `phi_items`: PHI annotation information (JSON format)
+## Schema
+```csv
+report_text: Full report text
+phi_items: PHI annotations in JSON format
 
-### 📄 Synthetic_reports_dataset_60.csv
-- **Number of Reports**: 60
-- **Purpose**: Test/Evaluation dataset
-- **Schema**:
-  - `report_text`: Full radiology report text (Japanese)
-  - `FinalPhase`: Final phase PHI extraction results
-  - `Completion result`: Model output results
 
-## PHI Annotation Format
-```json
-{
-  "report_id": "rep-mri-20240806-7a8b9c2d",
-  "phi_annotations": [
-    {
-      "entity_type": "PATIENT_NAME",
-      "text": "佐藤明子",
-      "start": 45,
-      "end": 49
-    },
-    {
-      "entity_type": "PATIENT_ID", 
-      "text": "MR2024-78234",
-      "start": 72,
-      "end": 84
-    }
-  ]
-}
+PHI Entity Types
+The following PHI entity types are included:
+
+PATIENT_NAME: Patient names (including kanji and hiragana)
+PATIENT_ID: Patient identifiers
+DATE_OF_BIRTH: Date of birth
+AGE: Age information
+GENDER: Gender/Sex
+ADDRESS: Physical addresses (postal codes, building names, room numbers)
+PHONE_NUMBER: Phone numbers (landline and mobile)
+EMERGENCY_CONTACT: Emergency contact information (names, relationships, phone numbers)
+DOCTOR_NAME: Physician names
+FACILITY_NAME: Healthcare facility names
+FACILITY_ADDRESS: Facility addresses
+FACILITY_PHONE: Facility phone numbers
+EXAMINATION_DATE: Examination dates and times
+DEVICE_INFO: Medical device information (serial numbers, etc.)
+
+Dataset Characteristics
+
+Language: Japanese
+Average Report Length: ~2,000-3,000 characters
+PHI Density: Average of 5.5 PHI instances per report
+Data Diversity:
+
+Multiple healthcare facility types (university hospitals, clinics, health screening centers)
+Various imaging modalities (MRI, CT, plain radiography, ultrasound)
+Wide age range coverage (pediatric to geriatric)
