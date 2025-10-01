@@ -2,7 +2,7 @@
 Code data for 'LLM-based de-identification framework for medical imaging reports
  
 
-**This repository contains code for the study accepted by npj Digital Medicine (Manuscript ID: [Your ID]).**
+**This repository contains code for the study accepted by npj Digital Medicine (Manuscript ID: [ID]).**
 
 ## Availability Statement
 
