@@ -6,7 +6,7 @@ Code data for 'LLM-based de-identification framework for medical imaging reports
 
 ## Availability Statement
 
-✅ **Formal publication後完全公開予定**  
+✅ **Formal publication**  
 All code and data will be made publicly available under MIT License upon formal publication. 
 
 🔒 **Currently**:  
